@@ -81,7 +81,7 @@ def coffee_ui(input_command):
             print("Insufficient resources.")
     elif input_command == "report":
         for item in resources:
-            print(f"{item}: {resources[item]['amount']}{resources[item]['unit']}")
+            print(f"{item}: {resources[item]['amount']} {resources[item]['unit']}")
         app_status = "restart"
     else:
         print("Please use a proper command!")
