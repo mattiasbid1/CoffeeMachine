@@ -30,3 +30,6 @@ resources = {
     "coffee": 100,
 }
 
+# adding a line
+# TODO maybe a todo also
+print("Snakes")
