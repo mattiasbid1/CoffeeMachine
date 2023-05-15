@@ -76,6 +76,8 @@ def coffee_ui(input_command):
                 resources["milk"]['amount'] -= MENU[input_command]["ingredients"]["milk"]
                 resources["money"]['amount'] += MENU[input_command]["cost"]
                 print(f"Enjoy your {input_command}, enjoy!")
+        else:
+            print("Insufficient resources.")
     elif input_command == "report":
         for item in resources:
             print(f"{item}: {resources[item]['amount']}{resources[item]['unit']}")
@@ -89,3 +91,4 @@ while True:
     coffee_ui(input("What would you like? (espresso/latte/cappuccino): "))
     if app_status == "end":
         break
+
