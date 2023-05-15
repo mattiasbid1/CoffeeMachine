@@ -49,6 +49,7 @@ app_status = "run"
 
 def coin_handler(menu_item):
     total_cost = MENU[menu_item]["cost"]
+    print(f"Please insert coins. The total cost is: ${total_cost:.2f}")
     quarters = int(input("How many quarters?: "))
     dimes = int(input("How many dimes?: "))
     nickles = int(input("How many nickles?: "))
